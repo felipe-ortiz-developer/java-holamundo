@@ -6,7 +6,7 @@ public class HolaMundo {
 		System.out.println("Hola Mundo");
 		double base = 5;
 		double exponente = 3;
-		double resultado = Math.pow(base, exponente);
+		int resultado = (int)Math.pow(base, exponente);
 		System.out.println("El resultado es "+resultado);
 	}
 

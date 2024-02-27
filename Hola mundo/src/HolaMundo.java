@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class HolaMundo {
 
@@ -25,6 +26,14 @@ public class HolaMundo {
 		String comparado = "felipe";
 		System.out.println(comparado.equals(nombre));
 		System.out.println(comparado.equalsIgnoreCase(nombre));
+		
+		// Ingresar datos por consola con Scanner
+		Scanner entrada = new Scanner(System.in);
+		System.out.println("Ingresa tu nombre");
+		String entrada_nombre = entrada.nextLine();
+		System.out.println("Ingresa tu edad");
+		int entrada_edad = entrada.nextInt();
+		System.out.println("Tu nombre es "+ entrada_nombre + ". El proximo año tendras "+ (entrada_edad+1));
 	}
 
 }

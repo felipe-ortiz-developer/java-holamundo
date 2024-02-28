@@ -1,5 +1,4 @@
 import javax.swing.JOptionPane;
-import javax.swing.event.SwingPropertyChangeSupport;
 
 public class Condicionales {
 	public static void main(String[] args) {
@@ -13,6 +12,16 @@ public class Condicionales {
 			System.out.println("Eres adulto mayor");
 		}
 		
-		
+		switch (edad) {
+			case 1:
+				System.out.println("Eres un bebe");
+				break;
+			case 2:
+				System.out.println("Eres un niño");
+				break;
+			default: 
+				System.out.println("Eres adulto");
+				break;
+		}
 	}
 }

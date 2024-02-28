@@ -13,6 +13,5 @@ public class ClaseMath {
 		// imprimir un formato de numero especifico ej: con 2 decimales
 		System.out.print("El numero formateado es ");
 		System.out.printf("%1.4f", Math.sqrt(raiz));
-		System.out.println("");
 	}
 }

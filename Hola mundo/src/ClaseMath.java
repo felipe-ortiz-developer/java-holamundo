@@ -13,5 +13,9 @@ public class ClaseMath {
 		// imprimir un formato de numero especifico ej: con 2 decimales
 		System.out.print("El numero formateado es ");
 		System.out.printf("%1.4f", Math.sqrt(raiz));
+		
+		//Random
+		int nuumero_random = (int)(Math.random()*100);
+		System.out.println("\nEl numero random es: "+nuumero_random);
 	}
 }

@@ -18,7 +18,7 @@ public class BucleWhile {
 		int numero_random = (int) (Math.random()*100);
 		int numero = 0;
 		int intento = 0;
-		while(numero_random != numero) {
+		do {
 			intento++;
 			numero = Integer.parseInt(JOptionPane.showInputDialog("Ingresa un numero"));
 			if(numero_random < numero) {
@@ -28,6 +28,7 @@ public class BucleWhile {
 				System.out.println("Más alto");
 			}
 		}
+		while(numero_random != numero);
 		System.out.println("Correcto. Lo lograste con "+intento+" intentos.");
 	}
 }

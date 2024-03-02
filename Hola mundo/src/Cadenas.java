@@ -1,6 +1,12 @@
 
 public class Cadenas {
 	public static void main(String[] args) {
+		// Char
+		// Observaciones: Debe ir con comillas simples o no sabe que es un char 
+		char letra = 'F';
+		System.out.println("Char: "+letra);
+		
+		// String
 		String nombre = "Felipe";
 		int numero = nombre.length();
 		System.out.println("Mi nombre es " + nombre + " y tiene " + numero + " letras");

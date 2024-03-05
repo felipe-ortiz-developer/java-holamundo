@@ -9,7 +9,7 @@ public class Arrays {
 		
 		int [] miArray = {0,1,2,3,6}; 
 		System.out.println(miArray[4]); // Da 6
-		System.out.println(miArray[5]); // Da error no existe
+		// System.out.println(miArray[5]); // Da error no existe
 		
 		System.out.println("Recorriendo con for");
 		for (int i = 0; i < miArray.length; i++) {

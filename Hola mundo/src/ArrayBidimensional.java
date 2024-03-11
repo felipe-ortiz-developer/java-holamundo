@@ -22,6 +22,7 @@ public class ArrayBidimensional {
 		arrayBidimensional[3][2] = 32;
 		arrayBidimensional[3][3] = 33;
 		
+		// Otra forma de declarar el array bidimensional
 		int [][] arrayBidimensional2 = {
 				{1,2,3,4},
 				{1,2,3,4},

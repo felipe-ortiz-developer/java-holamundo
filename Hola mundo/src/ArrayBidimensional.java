@@ -30,9 +30,18 @@ public class ArrayBidimensional {
 				{1,2,3,4}
 		};
 		
+		// como recorrer el array con for
 		for (int i = 0; i < arrayBidimensional.length; i++) {
 			for (int j = 0; j < arrayBidimensional[i].length; j++) {
 				System.out.println(arrayBidimensional[i][j]);
+			}
+		}
+		
+		System.out.println("Con forEach");
+		// como recorrer el array con for mejorado (forEach)
+		for (int[] is : arrayBidimensional2) {
+			for (int is2 : is) {
+				System.out.println(is2);
 			}
 		}
 		

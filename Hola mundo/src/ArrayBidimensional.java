@@ -22,6 +22,13 @@ public class ArrayBidimensional {
 		arrayBidimensional[3][2] = 32;
 		arrayBidimensional[3][3] = 33;
 		
+		int [][] arrayBidimensional2 = {
+				{1,2,3,4},
+				{1,2,3,4},
+				{1,2,3,4},
+				{1,2,3,4}
+		};
+		
 		for (int i = 0; i < arrayBidimensional.length; i++) {
 			for (int j = 0; j < arrayBidimensional[i].length; j++) {
 				System.out.println(arrayBidimensional[i][j]);

@@ -9,8 +9,8 @@ public class Coche {
 		puertas = 4;
 	}
 	
-	public void setAltura() {
-		altura =  15;
+	public void setAltura(int inputAltura) {
+		altura =  inputAltura;
 	}
 	
 	public int getAltura() {

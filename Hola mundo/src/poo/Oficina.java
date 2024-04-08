@@ -1,10 +1,11 @@
 package poo;
+import java.util.*;
 
 public class Oficina {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Empleado miEmpleado = new Empleado("Felipe", 1400000);
+		Empleado miEmpleado = new Empleado("Felipe", 1400000, 07, 04, 2024);
 		miEmpleado.aumentarSueldo();
 //		miEmpleado.sueldo;
 		
@@ -16,11 +17,16 @@ public class Oficina {
 class Empleado {
 	private String nombre;
 	private int sueldo;
-//	private date fechaAlta;
+	private Date fechaAlta;
 	
-	public Empleado(String nombre, int sueldo) {
+	public Empleado(String nombre, 
+			int sueldo,
+			int anio,
+			int mes,
+			int dia) {
 		this.nombre = nombre;
 		this.sueldo = sueldo;
+		
 	}
 	
 	public void aumentarSueldo(){

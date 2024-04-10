@@ -1,5 +1,6 @@
 package poo;
 import java.util.Date;
+import java.util.GregorianCalendar;
 
 public class Oficina {
 
@@ -10,12 +11,15 @@ public class Oficina {
 //		miEmpleado.sueldo;
 		
 		System.out.println("El sueldo subio a " + miEmpleado.getSueldo());
+		System.out.println("La fecha es: "+ miEmpleado.getFechaAlta());
+		
+		miEmpleado.setNombre("algo");
 	}
 
 }
 
 class Empleado {
-	private String nombre;
+	private final String nombre;
 	private int sueldo;
 	private Date fechaAlta;
 	
@@ -27,6 +31,8 @@ class Empleado {
 		this.nombre = nombre;
 		this.sueldo = sueldo;
 		
+		GregorianCalendar calendario = new GregorianCalendar(anio, mes-1, dia); 
+		this.fechaAlta = calendario.getTime();
 	}
 	
 	public void aumentarSueldo(){
@@ -35,5 +41,13 @@ class Empleado {
 	
 	public int getSueldo() {
 		return this.sueldo;
+	}
+	
+	public Date getFechaAlta() {
+		return this.fechaAlta;
+	}
+	
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
 }

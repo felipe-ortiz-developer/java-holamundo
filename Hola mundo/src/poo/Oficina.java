@@ -5,6 +5,9 @@ import java.util.GregorianCalendar;
 public class Oficina {
 
 	public static void main(String[] args) {
+		Empleado[] misEmpleados = new Empleado[4];
+		misEmpleados[0] = new Empleado("Edy", 1400000, 07, 04, 2024);
+		misEmpleados[1] = new Empleado("Pepito");
 		// TODO Auto-generated method stub
 		Empleado miEmpleado1 = new Empleado("Felipe", 1400000, 07, 04, 2024);
 		Empleado miEmpleado2 = new Empleado("Daenerys", 4700000, 10, 04, 2024);
@@ -25,10 +28,10 @@ public class Oficina {
 
 class Empleado {
 	private int id;
-	private static int idSiguiente = 1;
-	private final String nombre;
+	private static int idSiguiente = 1; // Guarda el estado actual para el proximo obj
+	private final String nombre; // Variable constante que no cambia
 	private int sueldo;
-	private Date fechaAlta;
+	private Date fechaAlta; // Objeto Date
 	
 	public Empleado(String nombre, 
 			int sueldo,
@@ -42,6 +45,12 @@ class Empleado {
 		
 		GregorianCalendar calendario = new GregorianCalendar(anio, mes-1, dia); 
 		this.fechaAlta = calendario.getTime();
+	}
+	
+	public Empleado(String nombre) { // Sobrecarga de constructores
+		// this.nombre = nombre; 
+		this(nombre, 1500000, 1993, 12, 11); // podemos llamar al otro constructor y pasarle parametros por defecto
+		
 	}
 	
 	public void aumentarSueldo(){

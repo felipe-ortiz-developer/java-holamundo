@@ -26,7 +26,7 @@ public class Pitbull extends Perro{
 		this.raza = raza;
 	}
 	
-	public int getAltura() {
-		return 100;
-	}
+//	public int getAltura() {
+//		return 100;
+//	}
 }

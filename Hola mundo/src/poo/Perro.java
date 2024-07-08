@@ -31,7 +31,7 @@ public class Perro {
 		this.patas = patas;
 	}
 
-	public int getAltura() {
+	public final int getAltura() {
 		return altura;
 	}
 

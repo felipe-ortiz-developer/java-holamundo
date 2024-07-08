@@ -19,8 +19,10 @@ public class CarreraPerro {
 		
 		for (Perro e: miListaPerros) {
 			System.out.println("La altura es: "+e.getAltura());
-			
 		}
+		
+		Pitbull miPitbull2 = (Pitbull) miListaPerros[1];
+		System.out.println("La raza de mi pitbull es "+miPitbull2.getRaza());
 	}
 
 }

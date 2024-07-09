@@ -1,6 +1,6 @@
 package poo;
 
-public class Pitbull extends Perro{
+public class Pitbull extends Perro {
 	private int fuerza;
 	private String raza;
 	
@@ -29,4 +29,8 @@ public class Pitbull extends Perro{
 //	public int getAltura() {
 //		return 100;
 //	}
+	
+	public String getTipo() {
+		return "Pitbull Lento terrestre";
+	}
 }

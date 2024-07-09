@@ -1,6 +1,6 @@
 package poo;
 
-public class Perro {
+public class Perro extends Animal {
 	private int patas;
 	private int velocidad;
 	private int altura;
@@ -8,11 +8,16 @@ public class Perro {
 	private String color;
 	
 	public Perro(int velocidad, int altura, int peso, String color ) {
+		super();
 		this.setPatas(4);
 		this.velocidad = velocidad;
 		this.altura = altura;
 		this.peso = peso;
 		this.color = color;
+	}
+	
+	public String getTipo() {
+		return "Perro medio terrestre";
 	}
 	
 	public int getVelocidad(){

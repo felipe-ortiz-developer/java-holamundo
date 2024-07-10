@@ -6,6 +6,7 @@ public class Perro extends Animal {
 	private int altura;
 	private int peso;
 	private String color;
+	protected String accion = "Ladrar"; // propiedad protected
 	
 	public Perro(int velocidad, int altura, int peso, String color ) {
 		super();

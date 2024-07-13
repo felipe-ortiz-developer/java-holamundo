@@ -3,7 +3,7 @@ package logica;
 import java.util.*;
 
 
-public class Cancion {
+public class Cancion implements Comparable{
 	private String duracion;
 	enum Estilo {
 		POP("p"),CLASICA("class"),METAL("lml"), INDIE("i");
@@ -43,5 +43,18 @@ public class Cancion {
 
 	public void setDuracion(String duracion) {
 		this.duracion = duracion;
+	}
+
+	@Override
+	public int compareTo(Object o) {
+		// TODO Auto-generated method stub
+		Cancion cancion = (Cancion) o;
+		if(cancion.duracion == "1M") {
+			return 1;
+		}
+		if(cancion.duracion == "2M") {
+			return -1;
+		}
+		return 0;
 	}
 }

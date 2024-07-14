@@ -13,7 +13,7 @@ public class CarreraAnimal {
 		
 		String color = "Negro/Beige";
 		Perro miPerro1 = new Perro(velocidad, altura, peso, color);
-		Pitbull miPitbull1 = new Pitbull(velocidad, altura, peso, color, 50, "Argentino");
+		Pitbull miPitbull1 = new Pitbull(velocidad, altura, peso, color, 50, "Argentino", "Motor RCD-23");
 		Caballo miCaballo = new Caballo(alturaCaballo);
 		
 		Animal[] miListaAnimales = new Animal[3];

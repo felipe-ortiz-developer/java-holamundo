@@ -1,16 +1,18 @@
 package poo;
 
-public class Pitbull extends Perro {
+public class Pitbull extends Perro implements Mecanico {
 	private int fuerza;
 	private String raza;
 	private int imc;
 	
-	public Pitbull(int velocidad, int altura, int peso, String color, int fuerza, String raza) {
+	public Pitbull(int velocidad, int altura, int peso, String color, int fuerza, String raza, String motor) {
 		super(velocidad, altura, peso, color);
 		this.setFuerza(fuerza);
 		this.setRaza(raza);
 		this.imc = this.calcularIMC();
 		System.out.println("Acción: "+this.accion);
+		System.out.println(this.motor(motor));
+		
 	}
 	
 	private int calcularIMC() { // metodo private
@@ -41,5 +43,11 @@ public class Pitbull extends Perro {
 	
 	public String getTipo() {
 		return "Pitbull Lento terrestre";
+	}
+
+	@Override
+	public String motor(String motor) {
+		// TODO Auto-generated method stub
+		return motor;
 	}
 }

@@ -12,6 +12,7 @@ public class Pitbull extends Perro implements Mecanico {
 		this.imc = this.calcularIMC();
 		System.out.println("Acción: "+this.accion);
 		System.out.println(this.motor(motor));
+		System.out.println("Velocidad de movimiento: "+this.velocidadMovimiento(velocidad));
 		
 	}
 	
@@ -47,7 +48,11 @@ public class Pitbull extends Perro implements Mecanico {
 
 	@Override
 	public String motor(String motor) {
-		// TODO Auto-generated method stub
 		return motor;
+	}
+
+	@Override
+	public double velocidadMovimiento(double velocidad) {
+		return velocidad*2;
 	}
 }

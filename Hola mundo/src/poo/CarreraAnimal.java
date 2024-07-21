@@ -2,6 +2,9 @@ package poo;
 
 import java.util.Iterator;
 
+import javax.swing.JOptionPane;
+import javax.swing.Timer;
+
 public class CarreraAnimal {
 
 	public static void main(String[] args) {
@@ -27,6 +30,13 @@ public class CarreraAnimal {
 		
 		Pitbull miPitbull2 = (Pitbull) miListaAnimales[1];
 		System.out.println("La raza de mi pitbull es "+miPitbull2.getRaza());
+		
+		DameLahora oyente = new DameLahora();
+		Timer miTemporalizador = new Timer(5000, oyente);
+		miTemporalizador.start();
+		JOptionPane.showMessageDialog(null, "Pulsa aceptar para detener");
+		
+		
 	}
 
 }

@@ -1,5 +1,8 @@
 package poo;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 public class Pitbull extends Perro implements Mecanico {
 	private int fuerza;
 	private String raza;
@@ -54,5 +57,15 @@ public class Pitbull extends Perro implements Mecanico {
 	@Override
 	public double velocidadMovimiento(double velocidad) {
 		return velocidad*2;
+	}
+	
+	private class TrajeVelocidad implements ActionListener{
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			// TODO Auto-generated method stub
+			System.out.println("La fuerza es : "+fuerza);
+		}
+		
 	}
 }

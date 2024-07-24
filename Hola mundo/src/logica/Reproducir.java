@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class Reproducir {
 
 	public static void main(String[] args) {
+		Ventana miVentana = new Ventana();
 		// TODO Auto-generated method stub
 		Cancion miCancion = new Cancion("1M");
 		Cancion miCancion2 = new Cancion("2M");
@@ -14,6 +15,8 @@ public class Reproducir {
 		misCanciones[1] = miCancion2;
 		
 		Arrays.sort(misCanciones);
+		
+		
 	}
 
 }

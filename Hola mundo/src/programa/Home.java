@@ -1,5 +1,7 @@
 package programa;
 
+import java.awt.Frame;
+
 import javax.swing.JFrame;
 
 public class Home extends JFrame {
@@ -9,5 +11,9 @@ public class Home extends JFrame {
 		setBounds(500, 200, 300, 300);
 		setVisible(true);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//		setSize
+		setResizable(false);
+		setExtendedState(Frame.MAXIMIZED_BOTH);
+		setTitle("Mi ventana");
 	}
 }

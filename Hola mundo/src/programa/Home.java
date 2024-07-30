@@ -25,7 +25,7 @@ public class Home extends JFrame {
 		int alto = midimension.height;
 		setSize(ancho/2, alto/2);
 		setLocation(ancho/4, alto/4);
-		Image miIcono = mipantalla.getImage("180862.PNG");
+		Image miIcono = mipantalla.getImage("src/graficos/180862.PNG");
 		setIconImage(miIcono);
 		
 		

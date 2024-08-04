@@ -6,6 +6,7 @@ import javax.swing.JPanel;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.SystemColor;
 import java.awt.geom.Rectangle2D;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Line2D;
@@ -29,7 +30,7 @@ public class Home {
 		 
 		 Lamina miLamina = new Lamina();
 		 add(miLamina);
-		 miLamina.setBackground(Color.DARK_GRAY);
+		 miLamina.setBackground(SystemColor.window);
 	 }
  }
  

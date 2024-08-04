@@ -1,4 +1,4 @@
-package programa;
+package programa_v2;
 
 import java.awt.Graphics;
 
@@ -31,5 +31,8 @@ class Lamina extends JPanel {
 	public void paintComponent(Graphics g){
 		super.paintComponent(g);
 		g.drawString("Esto es un texto", 100, 100);
+		g.drawRect(50, 50, 300, 300);
+		g.drawLine(100, 120, 300, 200);
+		g.drawArc(50, 100, 100, 200, 120, 150);
 	}
 }

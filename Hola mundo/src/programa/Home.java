@@ -9,6 +9,8 @@ import java.awt.Toolkit;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+import programa_v2.Marco;
+
 public class Home extends JFrame {
 	public Home() {
 //		

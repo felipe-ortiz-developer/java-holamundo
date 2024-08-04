@@ -29,6 +29,7 @@ public class Home {
 		 
 		 Lamina miLamina = new Lamina();
 		 add(miLamina);
+		 miLamina.setBackground(Color.DARK_GRAY);
 	 }
  }
  

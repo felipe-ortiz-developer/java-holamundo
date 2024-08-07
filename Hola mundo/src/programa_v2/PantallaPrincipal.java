@@ -1,8 +1,11 @@
 package programa_v2;
 
 import java.awt.Graphics;
+import java.awt.GraphicsEnvironment;
+import java.util.Iterator;
 
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 
@@ -10,6 +13,18 @@ public class PantallaPrincipal {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		String fuente = JOptionPane.showInputDialog("Ingrese una fuente");
+		String [] nombresFuentes = GraphicsEnvironment.getLocalGraphicsEnvironment().getAvailableFontFamilyNames();
+		for(String nombreFuente: nombresFuentes) {
+			System.out.println(nombreFuente);
+			if(nombreFuente.equals(fuente)) {
+				System.out.println("Encontro la fuente");
+			}else {
+//				System.out.println("X");
+			}
+		}
+		
+		
 		Marco miMarco = new Marco();
 		miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}

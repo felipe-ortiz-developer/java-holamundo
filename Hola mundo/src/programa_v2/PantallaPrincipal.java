@@ -1,5 +1,7 @@
 package programa_v2;
 
+import java.awt.Color;
+import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.GraphicsEnvironment;
 import java.util.Iterator;
@@ -45,7 +47,17 @@ class Marco extends JFrame {
 class Lamina extends JPanel {
 	public void paintComponent(Graphics g){
 		super.paintComponent(g);
+		
+		Font miFont = new Font("Gabriola", Font.BOLD, 26);
+		g.setFont(miFont);
+		g.setColor(Color.BLUE);
 		g.drawString("Esto es un texto", 100, 100);
+		
+		Font miFont2 = new Font("Yu Gothic", Font.ITALIC, 20);
+		g.setFont(miFont2);
+		g.setColor(Color.BLACK);
+		g.drawString("Hola mundo desde otra fuente", 100, 200);
+		
 		g.drawRect(50, 50, 300, 300);
 		g.drawLine(100, 120, 300, 200);
 		g.drawArc(50, 100, 100, 200, 120, 150);

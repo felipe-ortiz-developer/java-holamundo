@@ -46,7 +46,9 @@ class Lamina extends JPanel {
 		
 		for (int i = 0; i < 300; i++) {
 			for (int j = 0; j < 200; j++) {
-				g.copyArea(5, 5,anchura , altura, anchura*i, altura*j);
+				if(i+j>0) {
+					g.copyArea(5, 5,anchura , altura, anchura*i, altura*j);
+				}
 			}	
 		}
 	}

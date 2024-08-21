@@ -40,5 +40,7 @@ class Lamina extends JPanel {
 		}
 		
 		g.drawImage(miImagen, 5,5,null);
+		
+		g.copyArea(5, 5, 100, 100, 200, 100);
 	}
 }

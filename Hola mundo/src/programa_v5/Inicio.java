@@ -2,6 +2,8 @@ package programa_v5;
 
 import java.awt.Graphics;
 import java.awt.Image;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
 import java.io.File;
 import java.io.IOException;
 
@@ -13,6 +15,9 @@ public class Inicio {
 	public static void main(String[] args) {
 		Marco miMarco = new Marco();
 		miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		Marco miMarco2 = new Marco();
+		miMarco2.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 	}
 }
 
@@ -25,6 +30,9 @@ class Marco extends JFrame {
 		setTitle("Esto es un titulo");
 		Lamina miLamina = new Lamina();
 		add(miLamina);
+		
+		M_ventana miAccionVentana = new M_ventana();
+		addWindowListener(miAccionVentana);
 	}
 }
 
@@ -51,5 +59,47 @@ class Lamina extends JPanel {
 				}
 			}	
 		}
+	}
+}
+
+class M_ventana implements WindowListener {
+	public void windowActivated(WindowEvent e) {
+		System.out.println("Ventana activa");
+	}
+
+	@Override
+	public void windowOpened(WindowEvent e) {
+		// TODO Auto-generated method stub
+		System.out.println("Ventana abierta");
+	}
+
+	@Override
+	public void windowClosing(WindowEvent e) {
+		// TODO Auto-generated method stub
+		System.out.println("Cerrando ventana");
+	}
+
+	@Override
+	public void windowClosed(WindowEvent e) {
+		// TODO Auto-generated method stub
+		System.out.println("Ventana cerrada");
+	}
+
+	@Override
+	public void windowIconified(WindowEvent e) {
+		// TODO Auto-generated method stub
+		System.out.println("Minimizada");
+	}
+
+	@Override
+	public void windowDeiconified(WindowEvent e) {
+		// TODO Auto-generated method stub
+		System.out.println("Ventana restaurada");
+	}
+
+	@Override
+	public void windowDeactivated(WindowEvent e) {
+		// TODO Auto-generated method stub
+		System.out.println("Ventana desactivada");
 	}
 }

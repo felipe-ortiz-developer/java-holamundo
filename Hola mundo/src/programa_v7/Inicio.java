@@ -30,6 +30,10 @@ class ListenerCambiaEstado implements WindowStateListener{
 		System.out.println("La ventana ha cambiado de estado");
 		if(e.getNewState() == Frame.MAXIMIZED_BOTH) {
 			System.out.println("La ventana fue maximizada");
+		}else if(e.getNewState() == Frame.NORMAL) {
+			System.out.println("La ventana esta en su estado normal");
+		}else if(e.getNewState() == Frame.ICONIFIED) {
+			System.out.println("La ventana se ha minimizado");
 		}
 	}
 }

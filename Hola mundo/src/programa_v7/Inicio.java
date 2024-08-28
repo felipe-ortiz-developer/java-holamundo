@@ -1,5 +1,6 @@
 package programa_v7;
 
+import java.awt.Frame;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowStateListener;
 
@@ -27,5 +28,8 @@ class Ventana extends JFrame {
 class ListenerCambiaEstado implements WindowStateListener{
 	public void windowStateChanged(WindowEvent e){
 		System.out.println("La ventana ha cambiado de estado");
+		if(e.getNewState() == Frame.MAXIMIZED_BOTH) {
+			System.out.println("La ventana fue maximizada");
+		}
 	}
 }

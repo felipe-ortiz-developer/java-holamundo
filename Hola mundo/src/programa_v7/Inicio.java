@@ -18,6 +18,9 @@ class Ventana extends JFrame {
 	public Ventana() {
 		setVisible(true);
 		setBounds(700, 300, 500, 300);
+		
+		ListenerCambiaEstado miListenerCambiaEstado = new ListenerCambiaEstado();
+		addWindowStateListener(miListenerCambiaEstado);
 	}
 }
 

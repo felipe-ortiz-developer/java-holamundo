@@ -1,6 +1,8 @@
 package program_v10;
 
 import java.awt.Graphics;
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -38,8 +40,29 @@ class Lamina extends JPanel {
 		miTextField2.setBounds(120, 50, 150, 20);
 		add(miTextField1);
 		add(miTextField2);
+		
+		EventoFoco miEventoFoco = new EventoFoco();
+		miTextField1.addFocusListener(miEventoFoco);
+		miTextField2.addFocusListener(miEventoFoco);
+	}
+	
+	class EventoFoco implements FocusListener {
+
+		@Override
+		public void focusGained(FocusEvent e) {
+			// TODO Auto-generated method stub
+			System.out.println("Focus gained");
+		}
+
+		@Override
+		public void focusLost(FocusEvent e) {
+			// TODO Auto-generated method stub
+			System.out.println("Focus lost");
+		}
+		
 	}
 	
 	private JTextField miTextField1; 
 	private JTextField miTextField2; 
 }
+

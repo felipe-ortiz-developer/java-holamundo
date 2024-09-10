@@ -3,6 +3,9 @@ package program_v10;
 import java.awt.Graphics;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowFocusListener;
+import java.awt.event.WindowListener;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -13,7 +16,7 @@ public class Index {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Marco miMarco = new Marco();
-		
+		Marco miMarco2 = new Marco();
 	}
 }
 
@@ -46,7 +49,7 @@ class Lamina extends JPanel {
 		miTextField2.addFocusListener(miEventoFoco);
 	}
 	
-	class EventoFoco implements FocusListener {
+	class EventoFoco implements FocusListener{
 
 		@Override
 		public void focusGained(FocusEvent e) {
@@ -58,11 +61,22 @@ class Lamina extends JPanel {
 		public void focusLost(FocusEvent e) {
 			// TODO Auto-generated method stub
 			System.out.println("Focus lost");
+			
+			String texto = miTextField1.getText();
+			
+			for (int i = 0; i < texto.length(); i++) {
+				
+				if(texto.charAt(i) == '@') {
+					System.out.println("El texto tiene un arroba");
+					System.out.println();
+				}
+			}
 		}
 		
 	}
 	
-	private JTextField miTextField1; 
-	private JTextField miTextField2; 
+	JTextField miTextField1; 
+	JTextField miTextField2;
+
 }
 
